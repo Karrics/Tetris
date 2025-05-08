@@ -1,0 +1,3 @@
+/Users/karrics/progers/Tetris/build/CMakeFiles/Tetris.dir
+/Users/karrics/progers/Tetris/build/CMakeFiles/edit_cache.dir
+/Users/karrics/progers/Tetris/build/CMakeFiles/rebuild_cache.dir
