@@ -1,0 +1,25 @@
+cmake_minimum_required(VERSION 3.20)
+project(Tetris)
+
+set(CMAKE_CXX_STANDARD 20)
+
+# Пути к SFML
+set(SFML_DIR "/usr/local/lib/cmake/SFML")  # Если установлен через make install
+find_package(SFML 3.0.0 REQUIRED COMPONENTS Graphics Window System)
+
+# Основная программа
+add_executable(Tetris
+    src/main.cpp
+    src/Game.cpp
+    src/Grid.cpp
+    src/InputHandler.cpp
+    src/Renderer.cpp
+    src/Tetromino.cpp
+)
+
+target_include_directories(Tetris PRIVATE include)
+target_link_libraries(Tetris PRIVATE
+    sfml-graphics
+    sfml-window
+    sfml-system
+)
