@@ -1,101 +1,65 @@
-#include "../include/Game.h"
-#include <cstdlib>
-#include <ctime>
+#include "Game.hpp"
+#include <QGraphicsView>
+#include <QKeyEvent>
+#include "InputHandler.hpp"
 
-Game::Game()
-    : window(sf::VideoMode(sf::Vector2u(300u, 600u)), "Tetris"),  // Vector2u для SFML 3.0.0
-      grid(10, 20),
-      renderer(window),
-      inputHandler(),
-      currentTetromino(createRandomTetromino()),
-      score(0) {
-    srand(static_cast<unsigned int>(time(nullptr)));
+Game::Game(QWidget *parent)
+    : QMainWindow(parent), scene(new QGraphicsScene(this)), timer(new QTimer(this)), currentPiece(nullptr) {
+    setWindowTitle("Tetris with Qt");
+    resize(300, 600);
+
+    // Настройка сцены
+    scene->setSceneRect(0, 0, 300, 600);
+    QGraphicsView *view = new QGraphicsView(scene, this);
+    setCentralWidget(view);
+
+    // Настройка InputHandler
+    InputHandler *inputHandler = new InputHandler(this);
+    installEventFilter(inputHandler);
+    connect(inputHandler, &InputHandler::keyPressed, this, &Game::handleKeyPress);
+
+    // Настройка таймера
+    connect(timer, &QTimer::timeout, this, &Game::updateGame);
+    timer->start(500); 
+
+    // Создаем первую фигуру
+    spawnTetromino();
 }
 
-void Game::processInput() {
-    // Исправление: event->type -> event->type (без EventType)
-    while (auto event = window.pollEvent()) {
-        if (event->type == sf::Event::Closed) {  // Убран EventType
-            window.close();
-        }
-    }
-
-    // Исправление 3: Используем sf::Keyboard::Key::XXX
-    if (inputHandler.isKeyPressed(sf::Keyboard::Key::Left)) {
-        currentTetromino->move(-1, 0);
-        if (grid.checkCollision(*currentTetromino)) {
-            currentTetromino->move(1, 0);
-        }
-    }
-    if (inputHandler.isKeyPressed(sf::Keyboard::Key::Right)) {
-        currentTetromino->move(1, 0);
-        if (grid.checkCollision(*currentTetromino)) {
-            currentTetromino->move(-1, 0);
-        }
-    }
-    if (inputHandler.isKeyPressed(sf::Keyboard::Key::Down)) {
-        currentTetromino->move(0, 1);
-        if (grid.checkCollision(*currentTetromino)) {
-            currentTetromino->move(0, -1);
-        }
-    }
-    if (inputHandler.isKeyPressed(sf::Keyboard::Key::Up)) {
-        currentTetromino->rotate();
-        if (grid.checkCollision(*currentTetromino)) {
-            // Откат поворота (упрощенно)
-            currentTetromino->rotate();
-            currentTetromino->rotate();
-            currentTetromino->rotate();
-        }
-    }
+Game::~Game() {
+    delete scene;
+    delete timer;
+    delete currentPiece;
 }
 
-void Game::update() {
-    static sf::Clock fallClock;
-    if (fallClock.getElapsedTime().asSeconds() >= 0.5f) {
-        currentTetromino->move(0, 1);
-        if (grid.checkCollision(*currentTetromino)) {
-            currentTetromino->move(0, -1);
-            grid.merge(*currentTetromino);
-            score += grid.clearLines();
-            currentTetromino = createRandomTetromino();
-            if (grid.checkCollision(*currentTetromino)) {
-                reset();
-            }
-        }
-        fallClock.restart();
+void Game::spawnTetromino() {
+    currentPiece = new Tetromino();
+    scene->addItem(currentPiece);
+}
+
+void Game::updateGame() {
+    if (board.isGameOver()) {
+        timer->stop();
+        return;
+    }
+
+    currentPiece->moveDown();
+    if (board.isCollision(*currentPiece)) {
+        currentPiece->moveUp();
+        board.placeTetromino(*currentPiece);
+        board.clearLines();
+        spawnTetromino();
     }
 }
 
-void Game::render() {
-    window.clear(sf::Color::Black);
-    renderer.drawGrid(grid);
-    renderer.drawTetromino(*currentTetromino);
-    window.display();
-}
-
-std::unique_ptr<Tetromino<int>> Game::createRandomTetromino() {
-    static const std::vector<std::vector<std::vector<int>>> shapes = {
-        {{1, 1, 1, 1}},  // I
-        {{1, 1}, {1, 1}}, // O
-        {{0, 1, 0}, {1, 1, 1}}, // T
-        {{1, 0, 0}, {1, 1, 1}}, // L
-        {{0, 0, 1}, {1, 1, 1}}  // J
-    };
-    int index = rand() % shapes.size();
-    return std::make_unique<Tetromino<int>>(shapes[index], 4, 0);
-}
-
-void Game::reset() {
-    grid = Grid(10, 20);
-    currentTetromino = createRandomTetromino();
-    score = 0;
-}
-
-void Game::run() {
-    while (window.isOpen()) {
-        processInput();
-        update();
-        render();
+void Game::handleKeyPress(int key) {
+    if (key == Qt::Key_Left) {
+        currentPiece->moveLeft();
+    } else if (key == Qt::Key_Right) {
+        currentPiece->moveRight();
+    } else if (key == Qt::Key_Down) {
+        currentPiece->moveDown();
+    } else if (key == Qt::Key_Up) {
+        currentPiece->rotate();
     }
 }

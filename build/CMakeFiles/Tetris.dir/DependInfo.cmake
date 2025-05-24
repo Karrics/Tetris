@@ -8,12 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/karrics/progers/Tetris/src/Game.cpp" "CMakeFiles/Tetris.dir/src/Game.cpp.o" "gcc" "CMakeFiles/Tetris.dir/src/Game.cpp.o.d"
-  "/Users/karrics/progers/Tetris/src/Grid.cpp" "CMakeFiles/Tetris.dir/src/Grid.cpp.o" "gcc" "CMakeFiles/Tetris.dir/src/Grid.cpp.o.d"
-  "/Users/karrics/progers/Tetris/src/InputHandler.cpp" "CMakeFiles/Tetris.dir/src/InputHandler.cpp.o" "gcc" "CMakeFiles/Tetris.dir/src/InputHandler.cpp.o.d"
-  "/Users/karrics/progers/Tetris/src/Renderer.cpp" "CMakeFiles/Tetris.dir/src/Renderer.cpp.o" "gcc" "CMakeFiles/Tetris.dir/src/Renderer.cpp.o.d"
-  "/Users/karrics/progers/Tetris/src/Tetromino.cpp" "CMakeFiles/Tetris.dir/src/Tetromino.cpp.o" "gcc" "CMakeFiles/Tetris.dir/src/Tetromino.cpp.o.d"
-  "/Users/karrics/progers/Tetris/src/main.cpp" "CMakeFiles/Tetris.dir/src/main.cpp.o" "gcc" "CMakeFiles/Tetris.dir/src/main.cpp.o.d"
+  "" "Tetris_autogen/timestamp" "custom" "Tetris_autogen/deps"
+  "/Users/karrics/Projects/Tetris_1/build/Tetris_autogen/mocs_compilation.cpp" "CMakeFiles/Tetris.dir/Tetris_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/Tetris.dir/Tetris_autogen/mocs_compilation.cpp.o.d"
+  "/Users/karrics/Projects/Tetris_1/src/Board.cpp" "CMakeFiles/Tetris.dir/src/Board.cpp.o" "gcc" "CMakeFiles/Tetris.dir/src/Board.cpp.o.d"
+  "/Users/karrics/Projects/Tetris_1/src/Game.cpp" "CMakeFiles/Tetris.dir/src/Game.cpp.o" "gcc" "CMakeFiles/Tetris.dir/src/Game.cpp.o.d"
+  "/Users/karrics/Projects/Tetris_1/src/InputHandler.cpp" "CMakeFiles/Tetris.dir/src/InputHandler.cpp.o" "gcc" "CMakeFiles/Tetris.dir/src/InputHandler.cpp.o.d"
+  "/Users/karrics/Projects/Tetris_1/src/Tetromino.cpp" "CMakeFiles/Tetris.dir/src/Tetromino.cpp.o" "gcc" "CMakeFiles/Tetris.dir/src/Tetromino.cpp.o.d"
+  "/Users/karrics/Projects/Tetris_1/src/main.cpp" "CMakeFiles/Tetris.dir/src/main.cpp.o" "gcc" "CMakeFiles/Tetris.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

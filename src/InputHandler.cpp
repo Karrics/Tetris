@@ -1,5 +1,14 @@
-#include "InputHandler.h"
+#include "InputHandler.hpp"
+#include <QKeyEvent>
 
-bool InputHandler::isKeyPressed(sf::Keyboard::Key key) const {
-    return sf::Keyboard::isKeyPressed(key);
+InputHandler::InputHandler(QObject *parent)
+    : QObject(parent) {}
+
+bool InputHandler::eventFilter(QObject *obj, QEvent *event) {
+    if (event->type() == QEvent::KeyPress) {
+        QKeyEvent *keyEvent = static_cast<QKeyEvent *>(event);
+        emit keyPressed(keyEvent->key());
+        return true;
+    }
+    return QObject::eventFilter(obj, event);
 }

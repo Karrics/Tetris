@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/karrics/progers/Tetris
+CMAKE_SOURCE_DIR = /Users/karrics/Projects/Tetris_1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/karrics/progers/Tetris/build
+CMAKE_BINARY_DIR = /Users/karrics/Projects/Tetris_1/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karrics/progers/Tetris/build/CMakeFiles /Users/karrics/progers/Tetris/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karrics/Projects/Tetris_1/build/CMakeFiles /Users/karrics/Projects/Tetris_1/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karrics/progers/Tetris/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karrics/Projects/Tetris_1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,80 @@ Tetris/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/build
 .PHONY : Tetris/fast
 
+#=============================================================================
+# Target rules for targets named Tetris_autogen_timestamp_deps
+
+# Build rule for target.
+Tetris_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Tetris_autogen_timestamp_deps
+.PHONY : Tetris_autogen_timestamp_deps
+
+# fast build rule for target.
+Tetris_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris_autogen_timestamp_deps.dir/build.make CMakeFiles/Tetris_autogen_timestamp_deps.dir/build
+.PHONY : Tetris_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named Tetris_autogen
+
+# Build rule for target.
+Tetris_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Tetris_autogen
+.PHONY : Tetris_autogen
+
+# fast build rule for target.
+Tetris_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris_autogen.dir/build.make CMakeFiles/Tetris_autogen.dir/build
+.PHONY : Tetris_autogen/fast
+
+Tetris_autogen/mocs_compilation.o: Tetris_autogen/mocs_compilation.cpp.o
+.PHONY : Tetris_autogen/mocs_compilation.o
+
+# target to build an object file
+Tetris_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Tetris_autogen/mocs_compilation.cpp.o
+.PHONY : Tetris_autogen/mocs_compilation.cpp.o
+
+Tetris_autogen/mocs_compilation.i: Tetris_autogen/mocs_compilation.cpp.i
+.PHONY : Tetris_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+Tetris_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Tetris_autogen/mocs_compilation.cpp.i
+.PHONY : Tetris_autogen/mocs_compilation.cpp.i
+
+Tetris_autogen/mocs_compilation.s: Tetris_autogen/mocs_compilation.cpp.s
+.PHONY : Tetris_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+Tetris_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Tetris_autogen/mocs_compilation.cpp.s
+.PHONY : Tetris_autogen/mocs_compilation.cpp.s
+
+src/Board.o: src/Board.cpp.o
+.PHONY : src/Board.o
+
+# target to build an object file
+src/Board.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/src/Board.cpp.o
+.PHONY : src/Board.cpp.o
+
+src/Board.i: src/Board.cpp.i
+.PHONY : src/Board.i
+
+# target to preprocess a source file
+src/Board.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/src/Board.cpp.i
+.PHONY : src/Board.cpp.i
+
+src/Board.s: src/Board.cpp.s
+.PHONY : src/Board.s
+
+# target to generate assembly for a file
+src/Board.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/src/Board.cpp.s
+.PHONY : src/Board.cpp.s
+
 src/Game.o: src/Game.cpp.o
 .PHONY : src/Game.o
 
@@ -153,30 +227,6 @@ src/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
-src/Grid.o: src/Grid.cpp.o
-.PHONY : src/Grid.o
-
-# target to build an object file
-src/Grid.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/src/Grid.cpp.o
-.PHONY : src/Grid.cpp.o
-
-src/Grid.i: src/Grid.cpp.i
-.PHONY : src/Grid.i
-
-# target to preprocess a source file
-src/Grid.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/src/Grid.cpp.i
-.PHONY : src/Grid.cpp.i
-
-src/Grid.s: src/Grid.cpp.s
-.PHONY : src/Grid.s
-
-# target to generate assembly for a file
-src/Grid.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/src/Grid.cpp.s
-.PHONY : src/Grid.cpp.s
-
 src/InputHandler.o: src/InputHandler.cpp.o
 .PHONY : src/InputHandler.o
 
@@ -200,30 +250,6 @@ src/InputHandler.s: src/InputHandler.cpp.s
 src/InputHandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/src/InputHandler.cpp.s
 .PHONY : src/InputHandler.cpp.s
-
-src/Renderer.o: src/Renderer.cpp.o
-.PHONY : src/Renderer.o
-
-# target to build an object file
-src/Renderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/src/Renderer.cpp.o
-.PHONY : src/Renderer.cpp.o
-
-src/Renderer.i: src/Renderer.cpp.i
-.PHONY : src/Renderer.i
-
-# target to preprocess a source file
-src/Renderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/src/Renderer.cpp.i
-.PHONY : src/Renderer.cpp.i
-
-src/Renderer.s: src/Renderer.cpp.s
-.PHONY : src/Renderer.s
-
-# target to generate assembly for a file
-src/Renderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/src/Renderer.cpp.s
-.PHONY : src/Renderer.cpp.s
 
 src/Tetromino.o: src/Tetromino.cpp.o
 .PHONY : src/Tetromino.o
@@ -281,19 +307,21 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Tetris_autogen"
+	@echo "... Tetris_autogen_timestamp_deps"
 	@echo "... Tetris"
+	@echo "... Tetris_autogen/mocs_compilation.o"
+	@echo "... Tetris_autogen/mocs_compilation.i"
+	@echo "... Tetris_autogen/mocs_compilation.s"
+	@echo "... src/Board.o"
+	@echo "... src/Board.i"
+	@echo "... src/Board.s"
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"
-	@echo "... src/Grid.o"
-	@echo "... src/Grid.i"
-	@echo "... src/Grid.s"
 	@echo "... src/InputHandler.o"
 	@echo "... src/InputHandler.i"
 	@echo "... src/InputHandler.s"
-	@echo "... src/Renderer.o"
-	@echo "... src/Renderer.i"
-	@echo "... src/Renderer.s"
 	@echo "... src/Tetromino.o"
 	@echo "... src/Tetromino.i"
 	@echo "... src/Tetromino.s"

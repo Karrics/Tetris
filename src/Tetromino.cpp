@@ -1,30 +1,42 @@
-#include "../include/Tetromino.h"
+#include "Tetromino.hpp"
+#include <QPainter>
+#include <QRandomGenerator>
 
-template <typename T>
-Tetromino<T>::Tetromino(const std::vector<std::vector<T>>& shape, T x, T y)
-    : shape(shape), x(x), y(y) {}
+Tetromino::Tetromino() : x(4), y(0) {
+    // Генерация случайной фигуры
+    static const QVector<QVector<QPoint>> shapes = {
+        {{0, 0}, {1, 0}, {2, 0}, {3, 0}}, // I
+        {{0, 0}, {1, 0}, {0, 1}, {1, 1}}, // O
+        {{0, 0}, {1, 0}, {2, 0}, {1, 1}}, // T
+        {{0, 0}, {1, 0}, {2, 0}, {2, 1}}, // L
+        {{0, 1}, {1, 1}, {2, 1}, {2, 0}}  // J
+    };
+    blocks = shapes[QRandomGenerator::global()->bounded(shapes.size())];
+    color = QColor(QRandomGenerator::global()->bounded(256),
+                   QRandomGenerator::global()->bounded(256),
+                   QRandomGenerator::global()->bounded(256));
+}
 
-template <typename T>
-void Tetromino<T>::rotate() {
-    std::vector<std::vector<T>> rotated(shape[0].size(), std::vector<T>(shape.size()));
-    for (size_t i = 0; i < shape.size(); ++i) {
-        for (size_t j = 0; j < shape[i].size(); ++j) {
-            rotated[j][shape.size() - 1 - i] = shape[i][j];
-        }
+QRectF Tetromino::boundingRect() const {
+    return QRectF(-1, -1, 300, 600); 
+}
+
+void Tetromino::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
+    painter->setBrush(color);
+    for (const auto &block : blocks) {
+        painter->drawRect((x + block.x()) * 30, (y + block.y()) * 30, 30, 30);
     }
-    shape = rotated;
 }
 
-template <typename T>
-void Tetromino<T>::move(int dx, int dy) {
-    x += dx;
-    y += dy;
-}
+void Tetromino::moveLeft() { x--; }
+void Tetromino::moveRight() { x++; }
+void Tetromino::moveDown() { y++; }
+void Tetromino::moveUp() { y--; }
 
-template <typename T>
-const std::vector<std::vector<T>>& Tetromino<T>::getShape() const {
-    return shape;
+void Tetromino::rotate() {
+    for (auto &block : blocks) {
+        int temp = block.x();
+        block.rx() = block.y();
+        block.ry() = -temp;
+    }
 }
-
-// Явная специализация для int (обязательно для компиляции)
-template class Tetromino<int>;

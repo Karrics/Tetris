@@ -1,18 +1,23 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Tetris_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/Tetris_autogen.dir/ParseCache.txt"
+  "Tetris_autogen"
+  "CMakeFiles/Tetris.dir/Tetris_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/Tetris.dir/Tetris_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/Tetris.dir/src/Board.cpp.o"
+  "CMakeFiles/Tetris.dir/src/Board.cpp.o.d"
   "CMakeFiles/Tetris.dir/src/Game.cpp.o"
   "CMakeFiles/Tetris.dir/src/Game.cpp.o.d"
-  "CMakeFiles/Tetris.dir/src/Grid.cpp.o"
-  "CMakeFiles/Tetris.dir/src/Grid.cpp.o.d"
   "CMakeFiles/Tetris.dir/src/InputHandler.cpp.o"
   "CMakeFiles/Tetris.dir/src/InputHandler.cpp.o.d"
-  "CMakeFiles/Tetris.dir/src/Renderer.cpp.o"
-  "CMakeFiles/Tetris.dir/src/Renderer.cpp.o.d"
   "CMakeFiles/Tetris.dir/src/Tetromino.cpp.o"
   "CMakeFiles/Tetris.dir/src/Tetromino.cpp.o.d"
   "CMakeFiles/Tetris.dir/src/main.cpp.o"
   "CMakeFiles/Tetris.dir/src/main.cpp.o.d"
   "Tetris"
   "Tetris.pdb"
+  "Tetris_autogen/mocs_compilation.cpp"
+  "Tetris_autogen/timestamp"
 )
 
 # Per-language clean rules from dependency scanning.

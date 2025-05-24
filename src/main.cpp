@@ -1,7 +1,9 @@
-#include "../include/Game.h"
+#include <QApplication>
+#include "Game.hpp"
 
-int main() {
+int main(int argc, char *argv[]) {
+    QApplication app(argc, argv);
     Game game;
-    game.run();
-    return 0;
+    game.show();
+    return app.exec();
 }
