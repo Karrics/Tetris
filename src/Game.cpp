@@ -1,10 +1,16 @@
 #include "Game.hpp"
+#include "Board.hpp"
+#include "Tetromino.hpp"
+#include "InputHandler.hpp"
 #include <QGraphicsView>
 #include <QKeyEvent>
-#include "InputHandler.hpp"
+#include <QDebug>
+
 
 Game::Game(QWidget *parent)
-    : QMainWindow(parent), scene(new QGraphicsScene(this)), timer(new QTimer(this)), currentPiece(nullptr) {
+    : QMainWindow(parent), scene(new QGraphicsScene(this)), timer(new QTimer(this)), 
+      board(scene), // Передаем сцену в конструктор Board
+      currentPiece(nullptr) {
     setWindowTitle("Tetris with Qt");
     resize(300, 600);
 
@@ -15,16 +21,18 @@ Game::Game(QWidget *parent)
 
     // Настройка InputHandler
     InputHandler *inputHandler = new InputHandler(this);
-    installEventFilter(inputHandler);
+    view->installEventFilter(inputHandler);
     connect(inputHandler, &InputHandler::keyPressed, this, &Game::handleKeyPress);
 
     // Настройка таймера
     connect(timer, &QTimer::timeout, this, &Game::updateGame);
-    timer->start(500); 
+    timer->start(500);
 
     // Создаем первую фигуру
     spawnTetromino();
 }
+
+
 
 Game::~Game() {
     delete scene;
@@ -33,6 +41,10 @@ Game::~Game() {
 }
 
 void Game::spawnTetromino() {
+    if (currentPiece) {
+        scene->removeItem(currentPiece); // Удаляем старую фигуру
+        delete currentPiece;
+    }
     currentPiece = new Tetromino();
     scene->addItem(currentPiece);
 }
@@ -47,19 +59,52 @@ void Game::updateGame() {
     if (board.isCollision(*currentPiece)) {
         currentPiece->moveUp();
         board.placeTetromino(*currentPiece);
-        board.clearLines();
+        int cleared = board.clearLines();
+        if (cleared > 0) {
+            qDebug() << "Lines cleared:" << cleared;
+        }
         spawnTetromino();
     }
 }
 
+// Обработчик нажатий клавиш
 void Game::handleKeyPress(int key) {
-    if (key == Qt::Key_Left) {
-        currentPiece->moveLeft();
-    } else if (key == Qt::Key_Right) {
-        currentPiece->moveRight();
-    } else if (key == Qt::Key_Down) {
-        currentPiece->moveDown();
-    } else if (key == Qt::Key_Up) {
-        currentPiece->rotate();
+    if (!currentPiece) return;
+
+    qDebug() << "Key pressed:" << key; // Отладочный вывод
+
+    // Сохраняем предыдущие координаты
+    int prevX = currentPiece->getX();
+    int prevY = currentPiece->getY();
+
+    // Двигаем фигуру
+    switch (key) {
+        case Qt::Key_Left:
+            currentPiece->moveLeft();
+            break;
+        case Qt::Key_Right:
+            currentPiece->moveRight();
+            break;
+        case Qt::Key_Down:
+            currentPiece->moveDown();
+            break;
+        case Qt::Key_Up:
+            currentPiece->rotate();
+            break;
+        default:
+            return;
     }
+
+    // Проверяем коллизию после движения
+    if (board.isCollision(*currentPiece)) {
+        // Откатываем изменения, если есть коллизия
+        currentPiece->setX(prevX);
+        currentPiece->setY(prevY);
+        if (key == Qt::Key_Up) {
+            currentPiece->rotateBack(); // Откатываем вращение
+        }
+    }
+
+    // Обновляем графику
+    scene->update();
 }

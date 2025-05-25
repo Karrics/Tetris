@@ -21,17 +21,35 @@ QRectF Tetromino::boundingRect() const {
     return QRectF(-1, -1, 300, 600); 
 }
 
+// В методе paint
 void Tetromino::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
     painter->setBrush(color);
     for (const auto &block : blocks) {
-        painter->drawRect((x + block.x()) * 30, (y + block.y()) * 30, 30, 30);
+        int blockX = (x + block.x()) * 30;
+        int blockY = (y + block.y()) * 30;
+        painter->drawRect(blockX, blockY, 30, 30);
     }
 }
 
-void Tetromino::moveLeft() { x--; }
-void Tetromino::moveRight() { x++; }
-void Tetromino::moveDown() { y++; }
-void Tetromino::moveUp() { y--; }
+void Tetromino::moveDown() {
+    y++; // Увеличиваем y на 1
+    update(); // Обновляем графику
+}
+
+void Tetromino::moveUp() {
+    y--; // Увеличиваем y на 1
+    update(); // Обновляем графику
+}
+
+void Tetromino::moveLeft() {
+    x--;
+    update();
+}
+
+void Tetromino::moveRight() {
+    x++;
+    update();
+}
 
 void Tetromino::rotate() {
     for (auto &block : blocks) {
@@ -39,4 +57,15 @@ void Tetromino::rotate() {
         block.rx() = block.y();
         block.ry() = -temp;
     }
+    update(); // Обновляем графику после вращения
 }
+
+void Tetromino::rotateBack() {
+    for (auto &block : blocks) {
+        int temp = block.x();
+        block.rx() = -block.y();
+        block.ry() = temp;
+    }
+    update();
+}
+

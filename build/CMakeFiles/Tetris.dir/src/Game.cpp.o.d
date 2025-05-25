@@ -1142,24 +1142,19 @@ CMakeFiles/Tetris.dir/src/Game.cpp.o: \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qdeadlinetimer.h \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qelapsedtimer.h \
   /Users/karrics/Projects/Tetris_1/include/Board.hpp \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QGraphicsItem \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qgraphicsitem.h \
+  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qpainterpath.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QVector \
   /opt/homebrew/lib/QtCore.framework/Headers/qvector.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QColor \
   /opt/homebrew/lib/QtGui.framework/Headers/qcolor.h \
   /Users/karrics/Projects/Tetris_1/include/Tetromino.hpp \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QGraphicsItem \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qgraphicsitem.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qpainterpath.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QPoint \
   /opt/homebrew/lib/QtCore.framework/Headers/qpoint.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QGraphicsView \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qgraphicsview.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qpainter.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qtextoption.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qscrollarea.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qabstractscrollarea.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qframe.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qgraphicsscene.h \
+  /Users/karrics/Projects/Tetris_1/include/InputHandler.hpp \
+  /opt/homebrew/lib/QtCore.framework/Headers/QObject \
+  /opt/homebrew/lib/QtCore.framework/Headers/qobject.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QKeyEvent \
   /opt/homebrew/lib/QtGui.framework/Headers/qevent.h \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qcoreevent.h \
@@ -1185,5 +1180,13 @@ CMakeFiles/Tetris.dir/src/Game.cpp.o: \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qinputmethod.h \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qlocale.h \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qguiapplication_platform.h \
-  /Users/karrics/Projects/Tetris_1/include/InputHandler.hpp \
-  /opt/homebrew/lib/QtCore.framework/Headers/QObject
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QGraphicsView \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qgraphicsview.h \
+  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qpainter.h \
+  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qtextoption.h \
+  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qscrollarea.h \
+  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qabstractscrollarea.h \
+  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qframe.h \
+  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qgraphicsscene.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QDebug \
+  /opt/homebrew/lib/QtCore.framework/Headers/qdebug.h

@@ -1143,14 +1143,14 @@ CMakeFiles/Tetris.dir/Tetris_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qdeadlinetimer.h \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qelapsedtimer.h \
   /Users/karrics/Projects/Tetris_1/build/Tetris_autogen/6YEA5652QU/../../../include/Board.hpp \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QGraphicsItem \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qgraphicsitem.h \
+  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qpainterpath.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QVector \
   /opt/homebrew/lib/QtCore.framework/Headers/qvector.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QColor \
   /opt/homebrew/lib/QtGui.framework/Headers/qcolor.h \
   /Users/karrics/Projects/Tetris_1/build/Tetris_autogen/6YEA5652QU/../../../include/Tetromino.hpp \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QGraphicsItem \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qgraphicsitem.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qpainterpath.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QPoint \
   /opt/homebrew/lib/QtCore.framework/Headers/qpoint.h \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qtmochelpers.h \
