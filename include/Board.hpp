@@ -4,11 +4,9 @@
 #include <QGraphicsItem>
 #include <QVector>
 #include <QColor>
-#include "Tetromino.hpp" 
+#include "Tetromino.hpp"
 
 class Board : public QGraphicsItem {
-    
-
 public:
     static const int WIDTH = 10;
     static const int HEIGHT = 20;

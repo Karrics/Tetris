@@ -18,6 +18,7 @@ Game::Game(QWidget *parent)
     scene->setSceneRect(0, 0, 300, 600);
     QGraphicsView *view = new QGraphicsView(scene, this);
     setCentralWidget(view);
+    scene->addItem(&board);
 
     // Настройка InputHandler
     InputHandler *inputHandler = new InputHandler(this);
@@ -42,11 +43,12 @@ Game::~Game() {
 
 void Game::spawnTetromino() {
     if (currentPiece) {
-        scene->removeItem(currentPiece); // Удаляем старую фигуру
+        scene->removeItem(currentPiece); // Удаляем текущую фигуру из сцены
         delete currentPiece;
     }
     currentPiece = new Tetromino();
     scene->addItem(currentPiece);
+    scene->update();
 }
 
 void Game::updateGame() {
@@ -59,12 +61,10 @@ void Game::updateGame() {
     if (board.isCollision(*currentPiece)) {
         currentPiece->moveUp();
         board.placeTetromino(*currentPiece);
-        int cleared = board.clearLines();
-        if (cleared > 0) {
-            qDebug() << "Lines cleared:" << cleared;
-        }
+        board.clearLines();
         spawnTetromino();
     }
+    scene->update(); // Обновляем всю сцену
 }
 
 // Обработчик нажатий клавиш
