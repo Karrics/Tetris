@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/game_over.png</file>
+    </qresource>
+</RCC>

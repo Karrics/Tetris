@@ -1185,4 +1185,9 @@ CMakeFiles/Tetris.dir/Tetris_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qcoreapplication_platform.h \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qinputmethod.h \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qlocale.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qguiapplication_platform.h
+  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qguiapplication_platform.h \
+  /Users/karrics/Projects/Tetris_1/build/Tetris_autogen/6YEA5652QU/moc_MainMenu.cpp \
+  /Users/karrics/Projects/Tetris_1/build/Tetris_autogen/6YEA5652QU/../../../include/MainMenu.hpp \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QPushButton \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qpushbutton.h \
+  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qabstractbutton.h

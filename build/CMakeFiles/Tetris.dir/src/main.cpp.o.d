@@ -1130,7 +1130,7 @@ CMakeFiles/Tetris.dir/src/main.cpp.o: \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qhash.h \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qvarlengtharray.h \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qguiapplication_platform.h \
-  /Users/karrics/Projects/Tetris_1/include/Game.hpp \
+  /Users/karrics/Projects/Tetris_1/include/MainMenu.hpp \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QMainWindow \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qmainwindow.h \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qwidget.h \
@@ -1146,6 +1146,10 @@ CMakeFiles/Tetris.dir/src/main.cpp.o: \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qfontvariableaxis.h \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qsizepolicy.h \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qtabwidget.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QPushButton \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qpushbutton.h \
+  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qabstractbutton.h \
+  /Users/karrics/Projects/Tetris_1/include/Game.hpp \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QGraphicsScene \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qgraphicsscene.h \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qpen.h \

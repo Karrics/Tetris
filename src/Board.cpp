@@ -11,7 +11,6 @@ QRectF Board::boundingRect() const {
 }
 
 void Board::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
-    // Отрисовка статических блоков
     for (int y = 0; y < HEIGHT; ++y) {
         for (int x = 0; x < WIDTH; ++x) {
             if (grid[y][x] != Qt::transparent) {
@@ -26,7 +25,6 @@ void Board::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWi
 int Board::clearLines() {
     int linesCleared = 0;
 
-    // Проходим по всем строкам снизу вверх
     for (int y = HEIGHT - 1; y >= 0; --y) {
         bool full = true;
         for (int x = 0; x < WIDTH; ++x) {
@@ -37,31 +35,26 @@ int Board::clearLines() {
         }
 
         if (full) {
-            // Удаляем заполненную строку
             grid.removeAt(y);
-            // Добавляем пустую строку вверху
             grid.insert(0, QVector<QColor>(WIDTH, Qt::transparent));
             ++linesCleared;
-            ++y; // Проверяем ту же строку снова
-            update(); // Обновляем графику доски
+            ++y; 
+            update(); 
         }
     }
 
     return linesCleared;
 }
 
-// Остальные методы остаются без изменений
 bool Board::isCollision(const Tetromino &tetromino) const {
     for (const auto &block : tetromino.getBlocks()) {
         int x = tetromino.getX() + block.x();
         int y = tetromino.getY() + block.y();
 
-        // Проверка выхода за границы
         if (x < 0 || x >= WIDTH || y >= HEIGHT) {
             return true;
         }
 
-        // Проверка столкновения с блоками на доске
         if (y >= 0 && grid[y][x] != Qt::transparent) {
             return true;
         }
@@ -78,7 +71,7 @@ void Board::placeTetromino(const Tetromino &tetromino) {
         }
     }
     checkGameOver();
-    update(); // Обновляем графику доски
+    update(); 
 }
 
 

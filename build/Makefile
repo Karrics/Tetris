@@ -251,6 +251,30 @@ src/InputHandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/src/InputHandler.cpp.s
 .PHONY : src/InputHandler.cpp.s
 
+src/MainMenu.o: src/MainMenu.cpp.o
+.PHONY : src/MainMenu.o
+
+# target to build an object file
+src/MainMenu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/src/MainMenu.cpp.o
+.PHONY : src/MainMenu.cpp.o
+
+src/MainMenu.i: src/MainMenu.cpp.i
+.PHONY : src/MainMenu.i
+
+# target to preprocess a source file
+src/MainMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/src/MainMenu.cpp.i
+.PHONY : src/MainMenu.cpp.i
+
+src/MainMenu.s: src/MainMenu.cpp.s
+.PHONY : src/MainMenu.s
+
+# target to generate assembly for a file
+src/MainMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/src/MainMenu.cpp.s
+.PHONY : src/MainMenu.cpp.s
+
 src/Tetromino.o: src/Tetromino.cpp.o
 .PHONY : src/Tetromino.o
 
@@ -322,6 +346,9 @@ help:
 	@echo "... src/InputHandler.o"
 	@echo "... src/InputHandler.i"
 	@echo "... src/InputHandler.s"
+	@echo "... src/MainMenu.o"
+	@echo "... src/MainMenu.i"
+	@echo "... src/MainMenu.s"
 	@echo "... src/Tetromino.o"
 	@echo "... src/Tetromino.i"
 	@echo "... src/Tetromino.s"

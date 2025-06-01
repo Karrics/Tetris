@@ -900,10 +900,12 @@ Tetris_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Platforms/M
   /Users/karrics/Projects/Tetris_1/include/Board.hpp \
   /Users/karrics/Projects/Tetris_1/include/Game.hpp \
   /Users/karrics/Projects/Tetris_1/include/InputHandler.hpp \
+  /Users/karrics/Projects/Tetris_1/include/MainMenu.hpp \
   /Users/karrics/Projects/Tetris_1/include/Tetromino.hpp \
   /Users/karrics/Projects/Tetris_1/src/Board.cpp \
   /Users/karrics/Projects/Tetris_1/src/Game.cpp \
   /Users/karrics/Projects/Tetris_1/src/InputHandler.cpp \
+  /Users/karrics/Projects/Tetris_1/src/MainMenu.cpp \
   /Users/karrics/Projects/Tetris_1/src/Tetromino.cpp \
   /Users/karrics/Projects/Tetris_1/src/main.cpp \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/QList \
@@ -1097,9 +1099,12 @@ Tetris_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Platforms/M
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsItem \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsScene \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
+  /opt/homebrew/Cellar/qt/6.9.0/lib/QtWidgets.framework/Versions/A/Headers/QPushButton \
+  /opt/homebrew/Cellar/qt/6.9.0/lib/QtWidgets.framework/Versions/A/Headers/qabstractbutton.h \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsitem.h \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsscene.h \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtWidgets.framework/Versions/A/Headers/qmainwindow.h \
+  /opt/homebrew/Cellar/qt/6.9.0/lib/QtWidgets.framework/Versions/A/Headers/qpushbutton.h \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtWidgets.framework/Versions/A/Headers/qsizepolicy.h \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtWidgets.framework/Versions/A/Headers/qtabwidget.h \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h \
@@ -1599,8 +1604,6 @@ Tetris_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Platforms/M
 
 /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp:
 
-/opt/homebrew/share/cmake/Modules/CMakeCXXCompiler.cmake.in:
-
 /opt/homebrew/share/cmake/Modules/CMakeCCompiler.cmake.in:
 
 /opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake:
@@ -1862,6 +1865,10 @@ Tetris_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Platforms/M
 /opt/homebrew/lib/cmake/Qt6DBusPrivate/Qt6DBusPrivateConfigVersion.cmake:
 
 /opt/homebrew/Cellar/qt/6.9.0/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsscene.h:
+
+/opt/homebrew/Cellar/qt/6.9.0/lib/QtWidgets.framework/Versions/A/Headers/qabstractbutton.h:
+
+/opt/homebrew/Cellar/qt/6.9.0/lib/QtWidgets.framework/Versions/A/Headers/QPushButton:
 
 /opt/homebrew/bin/cmake:
 
@@ -2159,9 +2166,15 @@ Tetris_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Platforms/M
 
 /Users/karrics/Projects/Tetris_1/src/Tetromino.cpp:
 
+/Users/karrics/Projects/Tetris_1/src/MainMenu.cpp:
+
 /Users/karrics/Projects/Tetris_1/src/InputHandler.cpp:
 
 /Users/karrics/Projects/Tetris_1/src/Board.cpp:
+
+/opt/homebrew/share/cmake/Modules/CMakeCXXCompiler.cmake.in:
+
+/Users/karrics/Projects/Tetris_1/include/MainMenu.hpp:
 
 /Users/karrics/Projects/Tetris_1/include/InputHandler.hpp:
 
@@ -2324,6 +2337,8 @@ CMakeFiles/4.0.1/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_endian.h:
 
 /opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake:
+
+/opt/homebrew/Cellar/qt/6.9.0/lib/QtWidgets.framework/Versions/A/Headers/qpushbutton.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/__endian.h:
 

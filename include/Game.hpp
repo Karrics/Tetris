@@ -14,6 +14,9 @@ public:
     Game(QWidget *parent = nullptr);
     ~Game();
 
+signals:
+    void gameOver();
+
 private slots:
     void updateGame();
     void handleKeyPress(int key);

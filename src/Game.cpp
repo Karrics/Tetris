@@ -5,31 +5,29 @@
 #include <QGraphicsView>
 #include <QKeyEvent>
 #include <QDebug>
+#include <QMessageBox>
+#include <QPixmap>
 
 
 Game::Game(QWidget *parent)
     : QMainWindow(parent), scene(new QGraphicsScene(this)), timer(new QTimer(this)), 
-      board(scene), // Передаем сцену в конструктор Board
+      board(scene), 
       currentPiece(nullptr) {
     setWindowTitle("Tetris with Qt");
     resize(300, 600);
 
-    // Настройка сцены
     scene->setSceneRect(0, 0, 300, 600);
     QGraphicsView *view = new QGraphicsView(scene, this);
     setCentralWidget(view);
     scene->addItem(&board);
 
-    // Настройка InputHandler
     InputHandler *inputHandler = new InputHandler(this);
     view->installEventFilter(inputHandler);
     connect(inputHandler, &InputHandler::keyPressed, this, &Game::handleKeyPress);
 
-    // Настройка таймера
     connect(timer, &QTimer::timeout, this, &Game::updateGame);
     timer->start(500);
 
-    // Создаем первую фигуру
     spawnTetromino();
 }
 
@@ -43,7 +41,7 @@ Game::~Game() {
 
 void Game::spawnTetromino() {
     if (currentPiece) {
-        scene->removeItem(currentPiece); // Удаляем текущую фигуру из сцены
+        scene->removeItem(currentPiece); 
         delete currentPiece;
     }
     currentPiece = new Tetromino();
@@ -54,6 +52,22 @@ void Game::spawnTetromino() {
 void Game::updateGame() {
     if (board.isGameOver()) {
         timer->stop();
+        emit gameOver();
+
+
+        QMessageBox msgBox(this);
+        msgBox.setWindowTitle("Game Over");
+        msgBox.setText("Игра окончена!");
+        msgBox.setIconPixmap(QPixmap("../resources/icons/game_over.png")); // Путь к вашей иконке
+        msgBox.addButton(QMessageBox::Ok);
+
+
+        msgBox.exec();
+
+
+        QTimer::singleShot(0, this, [this]() {
+            this->hide();
+        });
         return;
     }
 
@@ -64,20 +78,17 @@ void Game::updateGame() {
         board.clearLines();
         spawnTetromino();
     }
-    scene->update(); // Обновляем всю сцену
+    scene->update();
 }
 
-// Обработчик нажатий клавиш
 void Game::handleKeyPress(int key) {
     if (!currentPiece) return;
 
-    qDebug() << "Key pressed:" << key; // Отладочный вывод
+    qDebug() << "Key pressed:" << key; 
 
-    // Сохраняем предыдущие координаты
     int prevX = currentPiece->getX();
     int prevY = currentPiece->getY();
 
-    // Двигаем фигуру
     switch (key) {
         case Qt::Key_Left:
             currentPiece->moveLeft();
@@ -95,16 +106,13 @@ void Game::handleKeyPress(int key) {
             return;
     }
 
-    // Проверяем коллизию после движения
     if (board.isCollision(*currentPiece)) {
-        // Откатываем изменения, если есть коллизия
         currentPiece->setX(prevX);
         currentPiece->setY(prevY);
         if (key == Qt::Key_Up) {
-            currentPiece->rotateBack(); // Откатываем вращение
+            currentPiece->rotateBack(); 
         }
     }
 
-    // Обновляем графику
     scene->update();
 }

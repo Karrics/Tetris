@@ -14,7 +14,7 @@ protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
 
 signals:
-    void keyPressed(int key); // Объявление сигнала
+    void keyPressed(int key); 
 };
 
 #endif 

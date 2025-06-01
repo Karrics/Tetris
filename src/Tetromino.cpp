@@ -3,7 +3,6 @@
 #include <QRandomGenerator>
 
 Tetromino::Tetromino() : x(4), y(0) {
-    // Генерация случайной фигуры
     static const QVector<QVector<QPoint>> shapes = {
         {{0, 0}, {1, 0}, {2, 0}, {3, 0}}, // I
         {{0, 0}, {1, 0}, {0, 1}, {1, 1}}, // O
@@ -21,7 +20,6 @@ QRectF Tetromino::boundingRect() const {
     return QRectF(-1, -1, 300, 600); 
 }
 
-// В методе paint
 void Tetromino::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
     painter->setBrush(color);
     for (const auto &block : blocks) {
@@ -32,13 +30,13 @@ void Tetromino::paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
 }
 
 void Tetromino::moveDown() {
-    y++; // Увеличиваем y на 1
-    update(); // Обновляем графику
+    y++; 
+    update(); 
 }
 
 void Tetromino::moveUp() {
-    y--; // Увеличиваем y на 1
-    update(); // Обновляем графику
+    y--; 
+    update(); 
 }
 
 void Tetromino::moveLeft() {
@@ -57,7 +55,7 @@ void Tetromino::rotate() {
         block.rx() = block.y();
         block.ry() = -temp;
     }
-    update(); // Обновляем графику после вращения
+    update(); 
 }
 
 void Tetromino::rotateBack() {

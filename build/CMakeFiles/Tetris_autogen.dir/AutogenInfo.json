@@ -567,6 +567,12 @@
 			null
 		],
 		[
+			"/Users/karrics/Projects/Tetris_1/include/MainMenu.hpp",
+			"Mu",
+			"6YEA5652QU/moc_MainMenu.cpp",
+			null
+		],
+		[
 			"/Users/karrics/Projects/Tetris_1/include/Tetromino.hpp",
 			"Mu",
 			"6YEA5652QU/moc_Tetromino.cpp",
@@ -641,6 +647,7 @@
 		[ "/Users/karrics/Projects/Tetris_1/src/Board.cpp", "Mu", null ],
 		[ "/Users/karrics/Projects/Tetris_1/src/Game.cpp", "Mu", null ],
 		[ "/Users/karrics/Projects/Tetris_1/src/InputHandler.cpp", "Mu", null ],
+		[ "/Users/karrics/Projects/Tetris_1/src/MainMenu.cpp", "Mu", null ],
 		[ "/Users/karrics/Projects/Tetris_1/src/Tetromino.cpp", "Mu", null ],
 		[ "/Users/karrics/Projects/Tetris_1/src/main.cpp", "Mu", null ]
 	],

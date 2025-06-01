@@ -1,9 +1,9 @@
 #include <QApplication>
-#include "Game.hpp"
+#include "MainMenu.hpp"
 
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
-    Game game;
-    game.show();
+    MainMenu mainMenu;
+    mainMenu.show();
     return app.exec();
 }

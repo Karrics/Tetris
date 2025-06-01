@@ -26,11 +26,14 @@ add_executable(Tetris
     src/Game.cpp
     src/Board.cpp
     src/Tetromino.cpp
-    src/InputHandler.cpp    
+    src/InputHandler.cpp   
+    src/MainMenu.cpp 
     include/Board.hpp
     include/Game.hpp
     include/InputHandler.hpp
     include/Tetromino.hpp
+    include/MainMenu.hpp
+    resources/resources.qrc
 )
 
 # Линкуем библиотеки Qt

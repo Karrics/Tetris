@@ -1,6 +1,6 @@
-CMakeFiles/Tetris.dir/src/Game.cpp.o: \
-  /Users/karrics/Projects/Tetris_1/src/Game.cpp \
-  /Users/karrics/Projects/Tetris_1/include/Game.hpp \
+CMakeFiles/Tetris.dir/src/MainMenu.cpp.o: \
+  /Users/karrics/Projects/Tetris_1/src/MainMenu.cpp \
+  /Users/karrics/Projects/Tetris_1/include/MainMenu.hpp \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QMainWindow \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qmainwindow.h \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qtwidgetsglobal.h \
@@ -1131,6 +1131,10 @@ CMakeFiles/Tetris.dir/src/Game.cpp.o: \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qcursor.h \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qbitmap.h \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qtabwidget.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QPushButton \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qpushbutton.h \
+  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qabstractbutton.h \
+  /Users/karrics/Projects/Tetris_1/include/Game.hpp \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QGraphicsScene \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qgraphicsscene.h \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qpen.h \
@@ -1152,47 +1156,19 @@ CMakeFiles/Tetris.dir/src/Game.cpp.o: \
   /Users/karrics/Projects/Tetris_1/include/Tetromino.hpp \
   /opt/homebrew/lib/QtCore.framework/Headers/QPoint \
   /opt/homebrew/lib/QtCore.framework/Headers/qpoint.h \
-  /Users/karrics/Projects/Tetris_1/include/InputHandler.hpp \
-  /opt/homebrew/lib/QtCore.framework/Headers/QObject \
-  /opt/homebrew/lib/QtCore.framework/Headers/qobject.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QKeyEvent \
-  /opt/homebrew/lib/QtGui.framework/Headers/qevent.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qcoreevent.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qiodevice.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qurl.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qeventpoint.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qvector2d.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qvectornd.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qpointingdevice.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qinputdevice.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qscreen.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/QList \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/QObject \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/QRect \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/QSize \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/QSizeF \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/QTransform \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qnativeinterface.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qscreen_platform.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qguiapplication.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QVBoxLayout \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qboxlayout.h \
+  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qlayout.h \
+  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qlayoutitem.h \
+  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qboxlayout.h \
+  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qgridlayout.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QApplication \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qapplication.h \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qcoreapplication.h \
+  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qcoreevent.h \
+  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qnativeinterface.h \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qcoreapplication_platform.h \
+  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qguiapplication.h \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qinputmethod.h \
   /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qlocale.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qguiapplication_platform.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QGraphicsView \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qgraphicsview.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qpainter.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qtextoption.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qscrollarea.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qabstractscrollarea.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qframe.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qgraphicsscene.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QDebug \
-  /opt/homebrew/lib/QtCore.framework/Headers/qdebug.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QMessageBox \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qmessagebox.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qdialog.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qdialogbuttonbox.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QPixmap \
-  /opt/homebrew/lib/QtGui.framework/Headers/qpixmap.h
+  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qguiapplication_platform.h
