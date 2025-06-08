@@ -42,5 +42,6 @@ TEST(BoardTest, GameOver) {
     for (int x = 0; x < Board::WIDTH; ++x) {
         board.placeBlock(x, 0, Qt::red);
     }
+    board.checkGameOver();
     EXPECT_TRUE(board.isGameOver()); 
 }

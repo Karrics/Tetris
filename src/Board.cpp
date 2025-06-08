@@ -82,4 +82,5 @@ void Board::checkGameOver() {
             return;
         }
     }
+    gameOver = false;
 }

@@ -27,13 +27,14 @@ public:
             grid[y][x] = color;
         }
     }
+    void checkGameOver();
 
 private:
     QVector<QVector<QColor>> grid;
     QGraphicsScene *scene;
     bool gameOver;
 
-    void checkGameOver();
+    //void checkGameOver();
 };
 
 #endif // BOARD_H
