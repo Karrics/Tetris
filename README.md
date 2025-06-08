@@ -41,13 +41,27 @@
 
 ## 📂 Структура проекта
 
+<pre>
 Tetris/
-├── include/       
-├── src/           
-├── tests/         
-├── resources/     
-├── CMakeLists.txt 
-└── README.md      
+├── include/
+│   ├── Board.h
+│   ├── Game.h
+│   ├── MainMenu.h
+│   ├── Tetromino.h
+│   └── InputHandler.h
+├── src/
+│   ├── Board.cpp
+│   ├── Game.cpp
+│   ├── MainMenu.cpp
+│   ├── Tetromino.cpp
+│   └── InputHandler.cpp
+├── resources/
+│   └── resources.qrc
+├── tests/
+│   └── BoardTests.cpp
+├── CMakeLists.txt
+└── README.md
+</pre>    
 
 ---
 
