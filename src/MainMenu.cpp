@@ -1,4 +1,4 @@
-#include "MainMenu.hpp"
+#include "../include/MainMenu.hpp"
 #include <QVBoxLayout>
 #include <QApplication>
 

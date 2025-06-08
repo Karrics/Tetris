@@ -1,7 +1,7 @@
-#include "Game.hpp"
-#include "Board.hpp"
-#include "Tetromino.hpp"
-#include "InputHandler.hpp"
+#include "../include/Game.hpp"
+#include "../include/Board.hpp"
+#include "../include/Tetromino.hpp"
+#include "../include/InputHandler.hpp"
 #include <QGraphicsView>
 #include <QKeyEvent>
 #include <QDebug>
@@ -58,7 +58,7 @@ void Game::updateGame() {
         QMessageBox msgBox(this);
         msgBox.setWindowTitle("Game Over");
         msgBox.setText("Игра окончена!");
-        msgBox.setIconPixmap(QPixmap("../resources/icons/game_over.png")); // Путь к вашей иконке
+        msgBox.setIconPixmap(QPixmap("../resources/icons/game_over.png")); 
         msgBox.addButton(QMessageBox::Ok);
 
 

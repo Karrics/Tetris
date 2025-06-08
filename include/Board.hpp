@@ -10,7 +10,9 @@ class Board : public QGraphicsItem {
 public:
     static const int WIDTH = 10;
     static const int HEIGHT = 20;
-
+    QColor getColorAt(int x, int y) const {
+        return grid[y][x];
+    }
     Board(QGraphicsScene *scene = nullptr);
     QRectF boundingRect() const override;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;
@@ -19,6 +21,12 @@ public:
     void placeTetromino(const Tetromino &tetromino);
     int clearLines();
     bool isGameOver() const { return gameOver; }
+
+    void placeBlock(int x, int y, const QColor &color) {
+        if (y >= 0 && y < HEIGHT && x >= 0 && x < WIDTH) {
+            grid[y][x] = color;
+        }
+    }
 
 private:
     QVector<QVector<QColor>> grid;

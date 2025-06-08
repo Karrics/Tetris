@@ -1,4 +1,4 @@
-#include "Tetromino.hpp"
+#include "../include/Tetromino.hpp"
 #include <QPainter>
 #include <QRandomGenerator>
 

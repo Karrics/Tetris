@@ -1,5 +1,5 @@
-#include "Board.hpp"
-#include "Tetromino.hpp"
+#include "../include/Board.hpp"
+#include "../include/Tetromino.hpp"
 #include <QPainter>
 
 

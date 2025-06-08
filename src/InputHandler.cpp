@@ -1,4 +1,4 @@
-#include "InputHandler.hpp"
+#include "../include/InputHandler.hpp"
 #include <QKeyEvent>
 
 InputHandler::InputHandler(QObject *parent)
