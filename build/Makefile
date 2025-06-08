@@ -130,6 +130,19 @@ Tetris/fast:
 .PHONY : Tetris/fast
 
 #=============================================================================
+# Target rules for targets named TetrisTests
+
+# Build rule for target.
+TetrisTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TetrisTests
+.PHONY : TetrisTests
+
+# fast build rule for target.
+TetrisTests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TetrisTests.dir/build.make CMakeFiles/TetrisTests.dir/build
+.PHONY : TetrisTests/fast
+
+#=============================================================================
 # Target rules for targets named Tetris_autogen_timestamp_deps
 
 # Build rule for target.
@@ -154,6 +167,80 @@ Tetris_autogen: cmake_check_build_system
 Tetris_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris_autogen.dir/build.make CMakeFiles/Tetris_autogen.dir/build
 .PHONY : Tetris_autogen/fast
+
+#=============================================================================
+# Target rules for targets named TetrisTests_autogen_timestamp_deps
+
+# Build rule for target.
+TetrisTests_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TetrisTests_autogen_timestamp_deps
+.PHONY : TetrisTests_autogen_timestamp_deps
+
+# fast build rule for target.
+TetrisTests_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TetrisTests_autogen_timestamp_deps.dir/build.make CMakeFiles/TetrisTests_autogen_timestamp_deps.dir/build
+.PHONY : TetrisTests_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named TetrisTests_autogen
+
+# Build rule for target.
+TetrisTests_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TetrisTests_autogen
+.PHONY : TetrisTests_autogen
+
+# fast build rule for target.
+TetrisTests_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TetrisTests_autogen.dir/build.make CMakeFiles/TetrisTests_autogen.dir/build
+.PHONY : TetrisTests_autogen/fast
+
+TetrisTests_autogen/mocs_compilation.o: TetrisTests_autogen/mocs_compilation.cpp.o
+.PHONY : TetrisTests_autogen/mocs_compilation.o
+
+# target to build an object file
+TetrisTests_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TetrisTests.dir/build.make CMakeFiles/TetrisTests.dir/TetrisTests_autogen/mocs_compilation.cpp.o
+.PHONY : TetrisTests_autogen/mocs_compilation.cpp.o
+
+TetrisTests_autogen/mocs_compilation.i: TetrisTests_autogen/mocs_compilation.cpp.i
+.PHONY : TetrisTests_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+TetrisTests_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TetrisTests.dir/build.make CMakeFiles/TetrisTests.dir/TetrisTests_autogen/mocs_compilation.cpp.i
+.PHONY : TetrisTests_autogen/mocs_compilation.cpp.i
+
+TetrisTests_autogen/mocs_compilation.s: TetrisTests_autogen/mocs_compilation.cpp.s
+.PHONY : TetrisTests_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+TetrisTests_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TetrisTests.dir/build.make CMakeFiles/TetrisTests.dir/TetrisTests_autogen/mocs_compilation.cpp.s
+.PHONY : TetrisTests_autogen/mocs_compilation.cpp.s
+
+Tetris_autogen/3YJK5W5UP7/qrc_resources.o: Tetris_autogen/3YJK5W5UP7/qrc_resources.cpp.o
+.PHONY : Tetris_autogen/3YJK5W5UP7/qrc_resources.o
+
+# target to build an object file
+Tetris_autogen/3YJK5W5UP7/qrc_resources.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Tetris_autogen/3YJK5W5UP7/qrc_resources.cpp.o
+.PHONY : Tetris_autogen/3YJK5W5UP7/qrc_resources.cpp.o
+
+Tetris_autogen/3YJK5W5UP7/qrc_resources.i: Tetris_autogen/3YJK5W5UP7/qrc_resources.cpp.i
+.PHONY : Tetris_autogen/3YJK5W5UP7/qrc_resources.i
+
+# target to preprocess a source file
+Tetris_autogen/3YJK5W5UP7/qrc_resources.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Tetris_autogen/3YJK5W5UP7/qrc_resources.cpp.i
+.PHONY : Tetris_autogen/3YJK5W5UP7/qrc_resources.cpp.i
+
+Tetris_autogen/3YJK5W5UP7/qrc_resources.s: Tetris_autogen/3YJK5W5UP7/qrc_resources.cpp.s
+.PHONY : Tetris_autogen/3YJK5W5UP7/qrc_resources.s
+
+# target to generate assembly for a file
+Tetris_autogen/3YJK5W5UP7/qrc_resources.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Tetris_autogen/3YJK5W5UP7/qrc_resources.cpp.s
+.PHONY : Tetris_autogen/3YJK5W5UP7/qrc_resources.cpp.s
 
 Tetris_autogen/mocs_compilation.o: Tetris_autogen/mocs_compilation.cpp.o
 .PHONY : Tetris_autogen/mocs_compilation.o
@@ -185,6 +272,7 @@ src/Board.o: src/Board.cpp.o
 # target to build an object file
 src/Board.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/src/Board.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TetrisTests.dir/build.make CMakeFiles/TetrisTests.dir/src/Board.cpp.o
 .PHONY : src/Board.cpp.o
 
 src/Board.i: src/Board.cpp.i
@@ -193,6 +281,7 @@ src/Board.i: src/Board.cpp.i
 # target to preprocess a source file
 src/Board.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/src/Board.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TetrisTests.dir/build.make CMakeFiles/TetrisTests.dir/src/Board.cpp.i
 .PHONY : src/Board.cpp.i
 
 src/Board.s: src/Board.cpp.s
@@ -201,6 +290,7 @@ src/Board.s: src/Board.cpp.s
 # target to generate assembly for a file
 src/Board.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/src/Board.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TetrisTests.dir/build.make CMakeFiles/TetrisTests.dir/src/Board.cpp.s
 .PHONY : src/Board.cpp.s
 
 src/Game.o: src/Game.cpp.o
@@ -281,6 +371,7 @@ src/Tetromino.o: src/Tetromino.cpp.o
 # target to build an object file
 src/Tetromino.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/src/Tetromino.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TetrisTests.dir/build.make CMakeFiles/TetrisTests.dir/src/Tetromino.cpp.o
 .PHONY : src/Tetromino.cpp.o
 
 src/Tetromino.i: src/Tetromino.cpp.i
@@ -289,6 +380,7 @@ src/Tetromino.i: src/Tetromino.cpp.i
 # target to preprocess a source file
 src/Tetromino.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/src/Tetromino.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TetrisTests.dir/build.make CMakeFiles/TetrisTests.dir/src/Tetromino.cpp.i
 .PHONY : src/Tetromino.cpp.i
 
 src/Tetromino.s: src/Tetromino.cpp.s
@@ -297,6 +389,7 @@ src/Tetromino.s: src/Tetromino.cpp.s
 # target to generate assembly for a file
 src/Tetromino.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/src/Tetromino.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TetrisTests.dir/build.make CMakeFiles/TetrisTests.dir/src/Tetromino.cpp.s
 .PHONY : src/Tetromino.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -323,6 +416,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+tests/BoardTests.o: tests/BoardTests.cpp.o
+.PHONY : tests/BoardTests.o
+
+# target to build an object file
+tests/BoardTests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TetrisTests.dir/build.make CMakeFiles/TetrisTests.dir/tests/BoardTests.cpp.o
+.PHONY : tests/BoardTests.cpp.o
+
+tests/BoardTests.i: tests/BoardTests.cpp.i
+.PHONY : tests/BoardTests.i
+
+# target to preprocess a source file
+tests/BoardTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TetrisTests.dir/build.make CMakeFiles/TetrisTests.dir/tests/BoardTests.cpp.i
+.PHONY : tests/BoardTests.cpp.i
+
+tests/BoardTests.s: tests/BoardTests.cpp.s
+.PHONY : tests/BoardTests.s
+
+# target to generate assembly for a file
+tests/BoardTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TetrisTests.dir/build.make CMakeFiles/TetrisTests.dir/tests/BoardTests.cpp.s
+.PHONY : tests/BoardTests.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -331,9 +448,18 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... TetrisTests_autogen"
+	@echo "... TetrisTests_autogen_timestamp_deps"
 	@echo "... Tetris_autogen"
 	@echo "... Tetris_autogen_timestamp_deps"
 	@echo "... Tetris"
+	@echo "... TetrisTests"
+	@echo "... TetrisTests_autogen/mocs_compilation.o"
+	@echo "... TetrisTests_autogen/mocs_compilation.i"
+	@echo "... TetrisTests_autogen/mocs_compilation.s"
+	@echo "... Tetris_autogen/3YJK5W5UP7/qrc_resources.o"
+	@echo "... Tetris_autogen/3YJK5W5UP7/qrc_resources.i"
+	@echo "... Tetris_autogen/3YJK5W5UP7/qrc_resources.s"
 	@echo "... Tetris_autogen/mocs_compilation.o"
 	@echo "... Tetris_autogen/mocs_compilation.i"
 	@echo "... Tetris_autogen/mocs_compilation.s"
@@ -355,6 +481,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... tests/BoardTests.o"
+	@echo "... tests/BoardTests.i"
+	@echo "... tests/BoardTests.s"
 .PHONY : help
 
 
