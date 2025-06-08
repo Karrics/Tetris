@@ -1,11 +1,11 @@
 CMakeFiles/Tetris.dir/src/Tetromino.cpp.o: \
   /Users/karrics/Projects/Tetris_1/src/Tetromino.cpp \
-  /Users/karrics/Projects/Tetris_1/include/Tetromino.hpp \
+  /Users/karrics/Projects/Tetris_1/src/../include/Tetromino.hpp \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QGraphicsItem \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qgraphicsitem.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qtwidgetsglobal.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qtguiglobal.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qglobal.h \
+  /opt/homebrew/include/QtWidgets/qtwidgetsglobal.h \
+  /opt/homebrew/include/QtGui/qtguiglobal.h \
+  /opt/homebrew/include/QtCore/qglobal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__assert \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__assertion_handler \
@@ -335,33 +335,33 @@ CMakeFiles/Tetris.dir/src/Tetromino.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stdbool.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/stdbool.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_rsize_t.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qtcoreglobal.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qtversionchecks.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qtconfiginclude.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qconfig.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qtcore-config.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qtconfigmacros.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qtdeprecationdefinitions.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qcompilerdetection.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qprocessordetection.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qsystemdetection.h \
+  /opt/homebrew/include/QtCore/qtcoreglobal.h \
+  /opt/homebrew/include/QtCore/qtversionchecks.h \
+  /opt/homebrew/include/QtCore/qtconfiginclude.h \
+  /opt/homebrew/include/QtCore/qconfig.h \
+  /opt/homebrew/include/QtCore/qtcore-config.h \
+  /opt/homebrew/include/QtCore/qtconfigmacros.h \
+  /opt/homebrew/include/QtCore/qtdeprecationdefinitions.h \
+  /opt/homebrew/include/QtCore/qcompilerdetection.h \
+  /opt/homebrew/include/QtCore/qprocessordetection.h \
+  /opt/homebrew/include/QtCore/qsystemdetection.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qtcoreexports.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qtdeprecationmarkers.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qtclasshelpermacros.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qtpreprocessorsupport.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qassert.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qtnoop.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qtypes.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qtversion.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qtypeinfo.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qcontainerfwd.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qsysinfo.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qlogging.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qflags.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qcompare_impl.h \
+  /opt/homebrew/include/QtCore/qtcoreexports.h \
+  /opt/homebrew/include/QtCore/qtdeprecationmarkers.h \
+  /opt/homebrew/include/QtCore/qtclasshelpermacros.h \
+  /opt/homebrew/include/QtCore/qtpreprocessorsupport.h \
+  /opt/homebrew/include/QtCore/qassert.h \
+  /opt/homebrew/include/QtCore/qtnoop.h \
+  /opt/homebrew/include/QtCore/qtypes.h \
+  /opt/homebrew/include/QtCore/qtversion.h \
+  /opt/homebrew/include/QtCore/qtypeinfo.h \
+  /opt/homebrew/include/QtCore/qcontainerfwd.h \
+  /opt/homebrew/include/QtCore/qsysinfo.h \
+  /opt/homebrew/include/QtCore/qlogging.h \
+  /opt/homebrew/include/QtCore/qflags.h \
+  /opt/homebrew/include/QtCore/qcompare_impl.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \
@@ -832,38 +832,38 @@ CMakeFiles/Tetris.dir/src/Tetromino.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/byteswap.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/endian.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/has_single_bit.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qatomic.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qbasicatomic.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qatomic_cxx11.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qgenericatomic.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qyieldcpu.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qconstructormacros.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qdarwinhelpers.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qexceptionhandling.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qforeach.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qttypetraits.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qfunctionpointer.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qglobalstatic.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qmalloc.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qminmax.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qnumeric.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qoverload.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qswap.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qtenvironmentvariables.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qtresource.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qttranslation.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qversiontagging.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qtgui-config.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qtguiexports.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qtwidgets-config.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtWidgets/qtwidgetsexports.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qobject.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qobjectdefs.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qnamespace.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qcompare.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qstdlibdetection.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qcomparehelpers.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/q20type_traits.h \
+  /opt/homebrew/include/QtCore/qatomic.h \
+  /opt/homebrew/include/QtCore/qbasicatomic.h \
+  /opt/homebrew/include/QtCore/qatomic_cxx11.h \
+  /opt/homebrew/include/QtCore/qgenericatomic.h \
+  /opt/homebrew/include/QtCore/qyieldcpu.h \
+  /opt/homebrew/include/QtCore/qconstructormacros.h \
+  /opt/homebrew/include/QtCore/qdarwinhelpers.h \
+  /opt/homebrew/include/QtCore/qexceptionhandling.h \
+  /opt/homebrew/include/QtCore/qforeach.h \
+  /opt/homebrew/include/QtCore/qttypetraits.h \
+  /opt/homebrew/include/QtCore/qfunctionpointer.h \
+  /opt/homebrew/include/QtCore/qglobalstatic.h \
+  /opt/homebrew/include/QtCore/qmalloc.h \
+  /opt/homebrew/include/QtCore/qminmax.h \
+  /opt/homebrew/include/QtCore/qnumeric.h \
+  /opt/homebrew/include/QtCore/qoverload.h \
+  /opt/homebrew/include/QtCore/qswap.h \
+  /opt/homebrew/include/QtCore/qtenvironmentvariables.h \
+  /opt/homebrew/include/QtCore/qtresource.h \
+  /opt/homebrew/include/QtCore/qttranslation.h \
+  /opt/homebrew/include/QtCore/qversiontagging.h \
+  /opt/homebrew/include/QtGui/qtgui-config.h \
+  /opt/homebrew/include/QtGui/qtguiexports.h \
+  /opt/homebrew/include/QtWidgets/qtwidgets-config.h \
+  /opt/homebrew/include/QtWidgets/qtwidgetsexports.h \
+  /opt/homebrew/include/QtCore/qobject.h \
+  /opt/homebrew/include/QtCore/qobjectdefs.h \
+  /opt/homebrew/include/QtCore/qnamespace.h \
+  /opt/homebrew/include/QtCore/qcompare.h \
+  /opt/homebrew/include/QtCore/qstdlibdetection.h \
+  /opt/homebrew/include/QtCore/qcomparehelpers.h \
+  /opt/homebrew/include/QtCore/q20type_traits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binary_negate.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/bind.h \
@@ -996,37 +996,37 @@ CMakeFiles/Tetris.dir/src/Tetromino.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/unary_negate.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qtmetamacros.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qobjectdefs_impl.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qfunctionaltools_impl.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qstring.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qchar.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qstringview.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qbytearray.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qrefcount.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qarraydata.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qpair.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qarraydatapointer.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qarraydataops.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qcontainertools_impl.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qxptype_traits.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/q20functional.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/q20memory.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/q17memory.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qbytearrayalgorithms.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qbytearrayview.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qstringfwd.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qstringliteral.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qstringalgorithms.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qlatin1stringview.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qanystringview.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qutf8stringview.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qstringtokenizer.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qstringbuilder.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qstringconverter.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qstringconverter_base.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qlist.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qhashfunctions.h \
+  /opt/homebrew/include/QtCore/qtmetamacros.h \
+  /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
+  /opt/homebrew/include/QtCore/qfunctionaltools_impl.h \
+  /opt/homebrew/include/QtCore/qstring.h \
+  /opt/homebrew/include/QtCore/qchar.h \
+  /opt/homebrew/include/QtCore/qstringview.h \
+  /opt/homebrew/include/QtCore/qbytearray.h \
+  /opt/homebrew/include/QtCore/qrefcount.h \
+  /opt/homebrew/include/QtCore/qarraydata.h \
+  /opt/homebrew/include/QtCore/qpair.h \
+  /opt/homebrew/include/QtCore/qarraydatapointer.h \
+  /opt/homebrew/include/QtCore/qarraydataops.h \
+  /opt/homebrew/include/QtCore/qcontainertools_impl.h \
+  /opt/homebrew/include/QtCore/qxptype_traits.h \
+  /opt/homebrew/include/QtCore/q20functional.h \
+  /opt/homebrew/include/QtCore/q20memory.h \
+  /opt/homebrew/include/QtCore/q17memory.h \
+  /opt/homebrew/include/QtCore/qbytearrayalgorithms.h \
+  /opt/homebrew/include/QtCore/qbytearrayview.h \
+  /opt/homebrew/include/QtCore/qstringfwd.h \
+  /opt/homebrew/include/QtCore/qstringliteral.h \
+  /opt/homebrew/include/QtCore/qstringalgorithms.h \
+  /opt/homebrew/include/QtCore/qlatin1stringview.h \
+  /opt/homebrew/include/QtCore/qanystringview.h \
+  /opt/homebrew/include/QtCore/qutf8stringview.h \
+  /opt/homebrew/include/QtCore/qstringtokenizer.h \
+  /opt/homebrew/include/QtCore/qstringbuilder.h \
+  /opt/homebrew/include/QtCore/qstringconverter.h \
+  /opt/homebrew/include/QtCore/qstringconverter_base.h \
+  /opt/homebrew/include/QtCore/qlist.h \
+  /opt/homebrew/include/QtCore/qhashfunctions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/numeric \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/accumulate.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h \
@@ -1041,28 +1041,28 @@ CMakeFiles/Tetris.dir/src/Tetromino.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/saturation_arithmetic.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/transform_inclusive_scan.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qiterator.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qbytearraylist.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qstringlist.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qalgorithms.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qstringmatcher.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qscopedpointer.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qmetatype.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qdatastream.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qiodevicebase.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qfloat16.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qmath.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qtformat_impl.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qiterable.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qmetacontainer.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qcontainerinfo.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qtaggedpointer.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qscopeguard.h \
+  /opt/homebrew/include/QtCore/qiterator.h \
+  /opt/homebrew/include/QtCore/qbytearraylist.h \
+  /opt/homebrew/include/QtCore/qstringlist.h \
+  /opt/homebrew/include/QtCore/qalgorithms.h \
+  /opt/homebrew/include/QtCore/qstringmatcher.h \
+  /opt/homebrew/include/QtCore/qscopedpointer.h \
+  /opt/homebrew/include/QtCore/qmetatype.h \
+  /opt/homebrew/include/QtCore/qdatastream.h \
+  /opt/homebrew/include/QtCore/qiodevicebase.h \
+  /opt/homebrew/include/QtCore/qfloat16.h \
+  /opt/homebrew/include/QtCore/qmath.h \
+  /opt/homebrew/include/QtCore/qtformat_impl.h \
+  /opt/homebrew/include/QtCore/qiterable.h \
+  /opt/homebrew/include/QtCore/qmetacontainer.h \
+  /opt/homebrew/include/QtCore/qcontainerinfo.h \
+  /opt/homebrew/include/QtCore/qtaggedpointer.h \
+  /opt/homebrew/include/QtCore/qscopeguard.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/list \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qobject_impl.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qbindingstorage.h \
+  /opt/homebrew/include/QtCore/qobject_impl.h \
+  /opt/homebrew/include/QtCore/qbindingstorage.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/calendar.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/convert_to_tm.h \
@@ -1081,42 +1081,42 @@ CMakeFiles/Tetris.dir/src/Tetromino.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/year_month_weekday.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/literals.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qvariant.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qdebug.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qtextstream.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qcontiguouscache.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qsharedpointer.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qshareddata.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qsharedpointer_impl.h \
+  /opt/homebrew/include/QtCore/qvariant.h \
+  /opt/homebrew/include/QtCore/qdebug.h \
+  /opt/homebrew/include/QtCore/qtextstream.h \
+  /opt/homebrew/include/QtCore/qcontiguouscache.h \
+  /opt/homebrew/include/QtCore/qsharedpointer.h \
+  /opt/homebrew/include/QtCore/qshareddata.h \
+  /opt/homebrew/include/QtCore/qsharedpointer_impl.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_set \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qmap.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qshareddata_impl.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qset.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qhash.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qvarlengtharray.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/q23utility.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/q20utility.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qrect.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qmargins.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qsize.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qpoint.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qpainterpath.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qtransform.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qpolygon.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qregion.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qwindowdefs.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qspan.h \
+  /opt/homebrew/include/QtCore/qmap.h \
+  /opt/homebrew/include/QtCore/qshareddata_impl.h \
+  /opt/homebrew/include/QtCore/qset.h \
+  /opt/homebrew/include/QtCore/qhash.h \
+  /opt/homebrew/include/QtCore/qvarlengtharray.h \
+  /opt/homebrew/include/QtCore/q23utility.h \
+  /opt/homebrew/include/QtCore/q20utility.h \
+  /opt/homebrew/include/QtCore/qrect.h \
+  /opt/homebrew/include/QtCore/qmargins.h \
+  /opt/homebrew/include/QtCore/qsize.h \
+  /opt/homebrew/include/QtCore/qpoint.h \
+  /opt/homebrew/include/QtGui/qpainterpath.h \
+  /opt/homebrew/include/QtGui/qtransform.h \
+  /opt/homebrew/include/QtGui/qpolygon.h \
+  /opt/homebrew/include/QtGui/qregion.h \
+  /opt/homebrew/include/QtGui/qwindowdefs.h \
+  /opt/homebrew/include/QtCore/qspan.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/q20iterator.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qline.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qpixmap.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qpaintdevice.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qcolor.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qrgb.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qrgba64.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qimage.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qpixelformat.h \
+  /opt/homebrew/include/QtCore/q20iterator.h \
+  /opt/homebrew/include/QtCore/qline.h \
+  /opt/homebrew/include/QtGui/qpixmap.h \
+  /opt/homebrew/include/QtGui/qpaintdevice.h \
+  /opt/homebrew/include/QtGui/qcolor.h \
+  /opt/homebrew/include/QtGui/qrgb.h \
+  /opt/homebrew/include/QtGui/qrgba64.h \
+  /opt/homebrew/include/QtGui/qimage.h \
+  /opt/homebrew/include/QtGui/qpixelformat.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QVector \
   /opt/homebrew/lib/QtCore.framework/Headers/qvector.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QColor \
@@ -1125,14 +1125,14 @@ CMakeFiles/Tetris.dir/src/Tetromino.cpp.o: \
   /opt/homebrew/lib/QtCore.framework/Headers/qpoint.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QPainter \
   /opt/homebrew/lib/QtGui.framework/Headers/qpainter.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qtextoption.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qpen.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qbrush.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qfontinfo.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qfont.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtCore/qendian.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qfontvariableaxis.h \
-  /opt/homebrew/Cellar/qt/6.9.0/include/QtGui/qfontmetrics.h \
+  /opt/homebrew/include/QtGui/qtextoption.h \
+  /opt/homebrew/include/QtGui/qpen.h \
+  /opt/homebrew/include/QtGui/qbrush.h \
+  /opt/homebrew/include/QtGui/qfontinfo.h \
+  /opt/homebrew/include/QtGui/qfont.h \
+  /opt/homebrew/include/QtCore/qendian.h \
+  /opt/homebrew/include/QtGui/qfontvariableaxis.h \
+  /opt/homebrew/include/QtGui/qfontmetrics.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QRandomGenerator \
   /opt/homebrew/lib/QtCore.framework/Headers/qrandom.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/random \

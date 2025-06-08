@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Tetris_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/Tetris_autogen.dir/ParseCache.txt"
   "Tetris_autogen"
+  "CMakeFiles/Tetris.dir/Tetris_autogen/3YJK5W5UP7/qrc_resources.cpp.o"
+  "CMakeFiles/Tetris.dir/Tetris_autogen/3YJK5W5UP7/qrc_resources.cpp.o.d"
   "CMakeFiles/Tetris.dir/Tetris_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/Tetris.dir/Tetris_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/Tetris.dir/src/Board.cpp.o"
@@ -18,6 +20,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Tetris.dir/src/main.cpp.o.d"
   "Tetris"
   "Tetris.pdb"
+  "Tetris_autogen/3YJK5W5UP7/qrc_resources.cpp"
   "Tetris_autogen/mocs_compilation.cpp"
   "Tetris_autogen/timestamp"
 )
