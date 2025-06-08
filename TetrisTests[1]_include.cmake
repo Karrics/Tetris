@@ -1,0 +1,5 @@
+if(EXISTS "/Users/karrics/Projects/Tetris_1/build/TetrisTests[1]_tests.cmake")
+  include("/Users/karrics/Projects/Tetris_1/build/TetrisTests[1]_tests.cmake")
+else()
+  add_test(TetrisTests_NOT_BUILT TetrisTests_NOT_BUILT)
+endif()
