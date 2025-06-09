@@ -1,8 +1,0 @@
-/Users/karrics/Projects/Tetris_1/build/CMakeFiles/Tetris.dir
-/Users/karrics/Projects/Tetris_1/build/CMakeFiles/TetrisTests.dir
-/Users/karrics/Projects/Tetris_1/build/CMakeFiles/edit_cache.dir
-/Users/karrics/Projects/Tetris_1/build/CMakeFiles/rebuild_cache.dir
-/Users/karrics/Projects/Tetris_1/build/CMakeFiles/Tetris_autogen_timestamp_deps.dir
-/Users/karrics/Projects/Tetris_1/build/CMakeFiles/Tetris_autogen.dir
-/Users/karrics/Projects/Tetris_1/build/CMakeFiles/TetrisTests_autogen_timestamp_deps.dir
-/Users/karrics/Projects/Tetris_1/build/CMakeFiles/TetrisTests_autogen.dir
